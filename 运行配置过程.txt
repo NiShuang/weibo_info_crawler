@@ -1,0 +1,31 @@
+1.先安装Python环境，作者是Python 2.7.8
+2.再安装PIP或者easy_install
+3.通过命令pip install selenium安装selenium，它是自动测试、爬虫的工具
+4.然后修改代码中的用户名和密码，填写你自己的用户名和密码
+5.运行程序，自动调用Firefox浏览器登陆微博
+
+
+注意：手机端信息更加精致简单，而且没有动态加载的一些限制，但是如微博或粉丝id只显示20页，这是它的缺点；
+      而客户端可能存在动态加载，如评论和微博，但是它的信息更加完整。
+
+
+[源码] 爬取移动端微博信息
+
+spider_selenium_sina_content.py
+
+输入：
+明星用户id列表，采用URL+用户id进行访问（这些id可以从一个用户的关注列表里面获取）
+SinaWeibo_List_best_1.txt
+输出：
+微博信息及用户基本信息
+SinaWeibo_Info_best_1.txt
+
+Megry_Result_Best.py
+该文件用户整理某一天的用户微博信息，如2016年4月23日
+
+
+
+[源码] 爬取客户端微博信息
+
+爬取客户端信息，但是评论是动态加载，还在研究中
+weibo_spider2.py
